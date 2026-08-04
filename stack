@@ -7,13 +7,11 @@ class Stack
     int top;
 
 public:
-    // Constructor
     Stack()
     {
         top = -1;
     }
 
-    // Push operation
     void push(int value)
     {
         if (top == 99)
@@ -28,7 +26,6 @@ public:
         }
     }
 
-    // Pop operation
     void pop()
     {
         if (top == -1)
@@ -42,7 +39,6 @@ public:
         }
     }
 
-    // Peek operation
     void peek()
     {
         if (top == -1)
@@ -55,7 +51,6 @@ public:
         }
     }
 
-    // Display stack
     void display()
     {
         if (top == -1)
@@ -71,9 +66,8 @@ public:
             }
             cout << endl;
         }
-    };
+    }
 
-    // Check if stack is empty
     bool isEmpty()
     {
         return (top == -1);
@@ -107,3 +101,4 @@ int main()
 
     return 0;
 }
+
